@@ -2,7 +2,7 @@ import type { InvoiceStatus } from '../types';
 
 export const themeTokens = {
   colors: {
-    primary: '#4F46E5',
+    primary: '#4F31E5',
     primaryLight: '#EEF2FF',
     accent: '#14B8A6',
     coral: '#F97362',
