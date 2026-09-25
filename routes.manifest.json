@@ -1,0 +1,111 @@
+[
+  {
+    "auth_required": false,
+    "method": "GET",
+    "path": "/api/health",
+    "response_shape": {
+      "status": "string"
+    },
+    "sample_body": null,
+    "sample_params": {},
+    "success_status": 200
+  },
+  {
+    "auth_required": false,
+    "method": "GET",
+    "path": "/api/dashboard/stats",
+    "response_shape": {
+      "overdueCount": "int",
+      "recentInvoices": "array",
+      "statusCounts": "object",
+      "totalBilled": "number",
+      "totalClients": "int",
+      "totalInvoices": "int",
+      "totalOutstanding": "number",
+      "totalPaid": "number"
+    },
+    "sample_body": null,
+    "sample_params": {},
+    "success_status": 200
+  },
+  {
+    "auth_required": false,
+    "method": "GET",
+    "path": "/api/clients",
+    "response_shape": "array",
+    "sample_body": null,
+    "sample_params": {},
+    "success_status": 200
+  },
+  {
+    "auth_required": false,
+    "method": "GET",
+    "path": "/api/clients/:id",
+    "response_shape": {
+      "address": "string?",
+      "company": "string?",
+      "createdAt": "datetime",
+      "email": "string?",
+      "id": "int",
+      "invoices": "array",
+      "name": "string",
+      "notes": "string?",
+      "phone": "string?"
+    },
+    "sample_body": null,
+    "sample_params": {
+      "id": 1
+    },
+    "success_status": 200
+  },
+  {
+    "auth_required": false,
+    "method": "GET",
+    "path": "/api/invoices",
+    "response_shape": "array",
+    "sample_body": null,
+    "sample_params": {},
+    "success_status": 200
+  },
+  {
+    "auth_required": false,
+    "method": "GET",
+    "path": "/api/invoices/:id",
+    "response_shape": {
+      "client": "object",
+      "clientId": "int?",
+      "createdAt": "datetime",
+      "currency": "string",
+      "discount": "number",
+      "dueDate": "date?",
+      "id": "int",
+      "invoiceNumber": "string",
+      "issueDate": "date",
+      "items": "array",
+      "notes": "string?",
+      "status": "string",
+      "subtotal": "number",
+      "taxAmount": "number",
+      "taxRate": "number",
+      "total": "number",
+      "updatedAt": "datetime"
+    },
+    "sample_body": null,
+    "sample_params": {
+      "id": 1
+    },
+    "success_status": 200
+  },
+  {
+    "auth_required": false,
+    "method": "GET",
+    "path": "/api/invoices/:id/status",
+    "request_body": null,
+    "response_shape": null,
+    "sample_body": null,
+    "sample_params": {
+      "id": 1
+    },
+    "success_status": 200
+  }
+]

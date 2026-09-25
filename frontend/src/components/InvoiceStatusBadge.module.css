@@ -1,0 +1,6 @@
+.badge { display: inline-block; padding: 3px 10px; border-radius: 999px; font-size: 12px; font-weight: 600; text-transform: capitalize; }
+.draft { background: #eef0f4; color: #4b5563; }
+.sent { background: #e0ecff; color: #1d4ed8; }
+.paid { background: #dcfce7; color: #15803d; }
+.overdue { background: #fee2e2; color: #b91c1c; }
+.cancelled { background: #f3f4f6; color: #6b7280; text-decoration: line-through; }
